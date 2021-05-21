@@ -1,0 +1,17 @@
+.ball{
+  display: inline-block;
+  text-align: center; 
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#당첨버튼{
+  margin-bottom: 20px;
+}
+#맞춘횟수{
+  display: block;
+}
