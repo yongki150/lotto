@@ -10,7 +10,7 @@ function drawBall(content, $result) {
   var bg;
   switch (true) {
     case (content <= 10):
-      bg = 'red'
+      bg = 'tomato'
       break
     case (content <= 20):
       bg = 'orange'
@@ -22,14 +22,14 @@ function drawBall(content, $result) {
       bg = 'blue'
       break
     default:
-      bg = 'green'
+      bg = 'limegreen'
   }
   $ball.style.backgroundColor = bg;
   $result.appendChild($ball);
 }
 
 function showWinBall(winBalls, bonusBall) {
-  const $result = document.querySelector('#결과창');
+  const $result = document.querySelector('#결과메세지');
 
   for (let i = 0; i < winBalls.length; i++) {
     setTimeout(_ => {
@@ -38,7 +38,7 @@ function showWinBall(winBalls, bonusBall) {
   }
 
   setTimeout(_ => {
-    const $bonus = document.querySelector('#보너스');
+    const $bonus = document.querySelector('#보너스메세지');
     drawBall(bonusBall, $bonus);
   }, 4000);
 }
